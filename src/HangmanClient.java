@@ -30,6 +30,10 @@ public class HangmanClient {
 
 		int result = JOptionPane.showConfirmDialog(null, myPanel, 
 				"Enter Ip adress and Port", JOptionPane.OK_CANCEL_OPTION);
+		
+		if (result == JOptionPane.CANCEL_OPTION) {
+			System.exit(0);
+		}
 
 		if (result == JOptionPane.OK_OPTION) {
 			System.out.println("Ip value: " + ip.getText());
